@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors 陈小雪 (shell_chen@yeah.net)
+ * @date    2016-02-18 11:35:47
+ * @version $Id$
+ */
+
+
+@keyframes myfirst
+{
+    0%   {
+        background: red;
+        height: 10px;
+        width: 10px;
+
+    }
+    25%  {
+        background: yellow;
+        height: 20px;
+        width: 20px;
+    }
+    50%  {
+        background: blue;
+        height: 30px;
+        width: 30px;
+    }
+    100% {
+        background: green;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+   0%   {
+        background: red;
+        height: 10px;
+        width: 10px;
+    }
+    25%  {
+        background: yellow;
+        height: 20px;
+        width: 20px;
+    }
+    50%  {
+        background: blue;
+        height: 30px;
+        width: 30px;
+    }
+    100% {
+        background: green;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+div.test-css
+{
+    height: 100px;
+    width: 100px;
+    animation: myfirst 10s;
+    -webkit-animation: myfirst 10s; /* Safari and Chrome */
+    animation-iteration-count:infinite;
+}
+
+div.home-navbar{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 200px;
+}
